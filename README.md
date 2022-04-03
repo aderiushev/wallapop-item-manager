@@ -2,9 +2,9 @@
 
 ### No one really likes long-reads, so please welcome the [DEMO!](https://wallapop-item-manager-03042022.web.app/)
 
-Hello there!
-
 ## Disclamer:
+
+Hello there!
 
 Well, first I want to say that I'm so much grateful for the opportunity to try to join the Wallapop team.
 I believe I'll bring much value ~~or at least I'll do my best ;)~~
@@ -25,7 +25,7 @@ So here they are on a very high level:
 - tests *5h*
 - ci (other) *3h*
 
-so it is 3 work days and decided to follow ;)
+so it is approx. 3 work days, and I decided to follow ;)
 
 In fact, it took even less and that might be the reason to some things not being 100% perfectly/fully implemented.
 
