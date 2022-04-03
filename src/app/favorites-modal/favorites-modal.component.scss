@@ -1,0 +1,11 @@
+.search-field {
+  width: 100%;
+}
+
+.dialog-content {
+  width: 400px;
+
+  @media screen and (max-width: 480px) {
+    width: auto;
+  }
+}

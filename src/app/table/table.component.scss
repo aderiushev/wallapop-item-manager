@@ -1,0 +1,41 @@
+@use '@angular/material' as mat;
+
+.table-container {
+  position: relative;
+  min-height: 200px;
+  max-height: 400px;
+  overflow: auto;
+
+  table {
+    width: 100%;
+  }
+
+  tr {
+    cursor: pointer;
+  }
+
+  tr.detail-row {
+    height: 0;
+  }
+
+  tr.element-row:not(.expanded-row):hover {
+    background: mat.get-color-from-palette(mat.$gray-palette, 500);
+  }
+
+  .element-row td {
+    border-bottom-width: 0;
+  }
+
+  .expand-details {
+    overflow: hidden;
+    display: flex;
+
+    .description {
+      padding: 16px 0;
+    }
+
+    .email {
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+<mat-toolbar color="primary" data-test-id="toolbar">
+  <mat-toolbar-row>
+    <span class="left">🧑‍💻❤️🇪🇸 Item Manager</span>
+
+    <button
+      data-test-id="toolbar-favorite-button"
+      mat-button
+      (click)="onOpenFavoritesModal()"
+    >
+      Favorites
+      <mat-icon
+        matBadge="{{favoriteItems.length || null}}"
+        matBadgeColor="accent"
+        matBadgeSize="small"
+      >
+        favorite
+      </mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<div class="content" data-test-id="content">
+  <div *ngIf="isLoading" class="loader"><mat-spinner diameter="20"></mat-spinner></div>
+
+  <mat-card>
+    <mat-card-title>List</mat-card-title>
+    <mat-card-subtitle>Browse & search over the items</mat-card-subtitle>
+    <mat-card-content>
+      <form>
+        <mat-form-field appearance="fill" class="search-field">
+          <mat-label>What are u looking for?</mat-label>
+
+          <input
+            data-test-id="search-input"
+            matInput
+            type="text"
+            name="searchValue"
+            (input)="this.onSearchInputChangeDebounced($event)"
+            value="{{searchValue}}"
+            placeholder="Ex: Macbook 13"
+          />
+          <button *ngIf="searchValue" matSuffix mat-icon-button (click)="onSearchInputClear()">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-form-field>
+
+        <app-table [items]="items" [getItems]="getItems" [updateItem]="updateItem"></app-table>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
