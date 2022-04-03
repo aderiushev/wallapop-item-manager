@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
     strategy: GetRequestStrategy,
   } = {
     options: {
-      limit: 5,
+      limit: 15,
       offset: 0,
     },
     strategy: 'new',

@@ -3,8 +3,12 @@
 .table-container {
   position: relative;
   min-height: 200px;
-  max-height: 400px;
+  //max-height: 400px;
   overflow: auto;
+
+  @media screen and (max-width: 480px) {
+    height: 100%;
+  }
 
   table {
     width: 100%;
