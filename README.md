@@ -44,6 +44,7 @@ In fact, it took even less and that might be the reason to some things not being
 ## The list of things which could be definitely be done better:
 - mobile version (on my IPhone SE1 the table is too small)
   we could hide/make smaller the header or make the scrollable area bigger somehow
+  also it is not really responsive but adaptive
 - more test coverage
   However I've introduced the basic test-cases it is always something missing :)
 - favorites badge with a counter
