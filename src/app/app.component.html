@@ -25,7 +25,7 @@
   <mat-card class="card">
     <mat-card-title>List</mat-card-title>
     <mat-card-subtitle>Browse & search over the items</mat-card-subtitle>
-    <mat-card-content>
+    <mat-card-content class="card-content">
       <form>
         <mat-form-field appearance="fill" class="search-field">
           <mat-label>What are u looking for?</mat-label>
@@ -43,9 +43,11 @@
             <mat-icon>close</mat-icon>
           </button>
         </mat-form-field>
-
-        <app-table [items]="items" [getItems]="getItems" [updateItem]="updateItem"></app-table>
       </form>
+
+
+      <app-table [items]="items" [getItems]="getItems" [updateItem]="updateItem"></app-table>
+
     </mat-card-content>
   </mat-card>
 </div>

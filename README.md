@@ -53,7 +53,8 @@ In fact, it took even less and that might be the reason to some things not being
   I assume that for a further development it would be better to make more isolated components
 - real backend
   In order to adjust the loading/performance it would be nice to have a real api
-  
+
+Would be happy to discuss this and any other concerns/proposals ;)
 
 ## Set up (Development) guide
 
